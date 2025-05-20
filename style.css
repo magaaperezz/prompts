@@ -201,13 +201,13 @@ a {
 
     .list {
         gap: 0.45rem;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
     .indice {
         padding-top: 0.2rem;
         padding-right: 1rem;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
 
     .lorem {
         font-size: small;
