@@ -9,17 +9,18 @@ body {
 }
 
 @font-face {
-  font-family: 'Rengard';
-  src: url('./rengard-font/RengardfreeRegular-JR3MB.otf') format('truetype'); /* o .otf y 'opentype' */
-  font-family: 'Bellagia';
-  src: url(./bellagia-font/BellagiaDisplayThin-x32Mj.ttf) format('truetype');
+    font-family: 'Rengard';
+    src: url('./rengard-font/RengardfreeRegular-JR3MB.otf') format('truetype');
+    /* o .otf y 'opentype' */
+    font-family: 'Bellagia';
+    src: url(./bellagia-font/BellagiaDisplayThin-x32Mj.ttf) format('truetype');
 }
 
 /*inicio*/
 
 .oneB {
     border-radius: 0.5rem;
-    background-color: #a7be92;
+    background-color: #cbddb5e8;
     display: flex;
     text-align: center;
     font-size: medium;
@@ -35,10 +36,24 @@ body {
 
 .oneA {
     border-radius: 2%;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 8%;
+    margin-right: 8%;
     text-align: center;
-    background-color: #cbddb5;
+    background-color: #cbddb5e8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    /* Sombra opcional */
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    -webkit-transition: -webkit-transform 0.2s;
+    /* Suavidad de la animación */
+    cursor: pointer;
+}
+
+.oneA:hover {
+    transform: scale(1.007);
+    /* más ceros detrás del 1 = menos (%) zoom */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    /* Sombra más pronunciada al hacer hover */
+
 }
 
 #one {
@@ -69,11 +84,10 @@ body {
     padding-bottom: 1%;
 }
 
-
 .oneText {
     font-size: large;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
 }
 
 .img1 {
@@ -119,15 +133,18 @@ body {
     text-decoration: solid;
     color: black;
     font-size: 1.6rem;
-    font-family: 'Bellagia' , sans-serif;
+    font-family: 'Bellagia', sans-serif;
     font-weight: 800;
 }
 
 a {
     color: #7b8d6a;
-    transition-property: color, background-color; /* O la propiedad que quieras animar */
-    transition-duration: 0.35s; /* Duración de la transición, más alto = más lento */
-    transition-delay: 0.35s;    /* Espera 0.35 segundos antes de empezar la transición */
+    transition-property: color, background-color;
+    /* O la propiedad que quieras animar */
+    transition-duration: 0.35s;
+    /* Duración de la transición, más alto = más lento */
+    transition-delay: 0.35s;
+    /* Espera 0.35 segundos antes de empezar la transición */
 }
 
 .navItem {
@@ -184,13 +201,13 @@ a {
 
     .list {
         gap: 0.5rem;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .indice {
         padding-top: 0.2rem;
         padding-right: 1rem;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .lorem {
@@ -199,96 +216,3 @@ a {
 }
 
 /*
-nav.navbarTop {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 0.5rem 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow-x: auto;
-    /* permite scroll horizontal si es necesario 
-    scrollbar-width: thin;
-}
-
-nav.navbarTop::-webkit-scrollbar {
-    height: 6px;
-}
-
-nav.navbarTop::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
-}
-
-.indice {
-    color: black;
-    font-size: 1.5rem;
-    font-family: fantasy;
-    text-decoration: none;
-    font-weight: bold;
-    white-space: nowrap;
-    margin-right: 2rem;
-    /* separación del índice con los links 
-    flex-shrink: 0;
-    /* que no se encoja 
-}
-
-ul.list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 1rem;
-    flex-wrap: nowrap;
-    /* que no bajen de línea 
-}
-
-ul.list li.navItem {
-    min-width: 70px;
-    flex-shrink: 1;
-}
-
-ul.list li.navItem a.navLink {
-    color: black;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-family: fantasy;
-    padding: 0.5rem 0.5rem;
-    white-space: nowrap;
-    transition: color 0.3s ease;
-    display: block;
-}
-
-ul.list li.navItem a.navLink:hover {
-    color: #414d3a;
-}
-
-/* Responsive - pantallas pequeñas 
-@media (max-width: 200px) {
-    nav.navbarTop {
-        flex-wrap: wrap;
-        overflow-x: visible; /* quita scroll horizontal 
-        padding: 0.5rem 0.5rem;
-    }
-
-    .indice {
-        font-size: 1.2rem;
-        margin-right: 1rem;
-    }
-
-    ul.list {
-        gap: 0.5rem;
-    }
-
-    ul.list li.navItem {
-        min-width: 50px;
-    }
-
-    ul.list li.navItem a.navLink {
-        font-size: 1rem;
-        padding: 0.4rem 0.3rem;
-    }
-} 
-*/
