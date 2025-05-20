@@ -200,7 +200,7 @@ a {
     }
 
     .list {
-        gap: 0.5rem;
+        gap: 0.45rem;
         font-size: 0.7rem;
     }
 
@@ -208,7 +208,6 @@ a {
         padding-top: 0.2rem;
         padding-right: 1rem;
         font-size: 0.8rem;
-    }
 
     .lorem {
         font-size: small;
