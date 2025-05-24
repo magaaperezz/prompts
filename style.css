@@ -40,20 +40,6 @@ body {
     margin-right: 8%;
     text-align: center;
     background-color: #cbddb5e8;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    /* Sombra opcional */
-    transition: transform 0.2s, -webkit-transform 0.2s;
-    -webkit-transition: -webkit-transform 0.2s;
-    /* Suavidad de la animación */
-    cursor: pointer;
-}
-
-.oneA:hover {
-    transform: scale(1.007);
-    /* más ceros detrás del 1 = menos (%) zoom */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-    /* Sombra más pronunciada al hacer hover */
-
 }
 
 #one {
